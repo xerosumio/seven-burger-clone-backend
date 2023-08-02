@@ -1,0 +1,13 @@
+import { createApp } from "vue";
+import "./style.css";
+import App from "./App.vue";
+import ElementUI from "element-plus";
+import "element-plus/dist/index.css";
+import store from "@/store/index.js";
+import router from "./router/index.js";
+import "./styles/main.scss";
+const app = createApp(App);
+app.use(ElementUI);
+app.use(store);
+app.use(router);
+app.mount("#app");
